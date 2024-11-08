@@ -17,6 +17,11 @@
 </p>
 <br/>
 
+## TODO
+
+- Go to *database.new* and create a new project at supabase
+- Add supabase url, anon key, and database url to env.local
+
 ## Features
 
 - Works across the entire [Next.js](https://nextjs.org) stack

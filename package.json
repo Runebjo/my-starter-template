@@ -5,8 +5,8 @@
     "build": "next build",
     "start": "next start",
     "db:studio": "npx drizzle-kit studio",
-    "db:push": "npx drizzle-kit push:pg",
-    "db:migrate": "npx drizzle-kit generate:pg"
+    "db:push": "npx drizzle-kit push",
+    "db:migrate": "npx drizzle-kit generate"
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.1.1",
