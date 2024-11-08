@@ -20,7 +20,8 @@
 ## TODO
 
 - Go to *database.new* and create a new project at supabase
-- Add supabase url, anon key, and database url to env.local
+- Add supabase url and anon key to env.local
+- Go to DB section and select Mode: Session for connection pooler. Copy to DATABASE_URL til .env
 
 ## Features
 
