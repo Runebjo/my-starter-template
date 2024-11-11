@@ -4,6 +4,7 @@ import { encodedRedirect } from '@/utils/utils';
 import { createClient } from '@/utils/supabase/server';
 import { headers } from 'next/headers';
 import { redirect } from 'next/navigation';
+import { saveUser } from '@/utils/db/queries';
 
 export const signUpAction = async (formData: FormData) => {
   const email = formData.get('email')?.toString();
@@ -23,7 +24,7 @@ export const signUpAction = async (formData: FormData) => {
     },
   });
 
-  console.log('data', data)
+  await saveUser('', email, data?.user?.id ?? '');
 
   if (error) {
     console.error(error.code + ' ' + error.message);
